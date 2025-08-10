@@ -23,6 +23,9 @@ plt.xlabel("X-axis")
 plt.ylabel("Y-axis")
 plt.show()
 
+
+
+
 2. Object-Oriented Programming (OOPs)
 OOP is a programming paradigm that organizes code into classes and objects.
 
@@ -73,7 +76,7 @@ data = {'Name': ['Alice', 'Bob', 'Charlie'],
 df = pd.DataFrame(data)
 print(df.head())
 
-# Filtering
+#Filtering
 print(df[df['Age'] > 28])
 
 4. Regular Expressions (Regex)
