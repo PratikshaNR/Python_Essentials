@@ -1,104 +1,50 @@
-1. Matplotlib
+# Python Essentials
+This repository contains essential Python topics and examples to help beginners and learners get started with core Python concepts and libraries. It includes fundamental tools for data visualization, object-oriented programming, data manipulation, and text processing.
 
-Matplotlib is a Python library for creating static, animated, and interactive visualizations.
+Topics Covered
+Matplotlib — Plotting and visualizing data using various chart types.
 
-Key Features:
+Object-Oriented Programming (OOPs) — Classes, objects, encapsulation, inheritance, polymorphism, and more.
 
-Line, bar, scatter, histogram, and pie charts.
+Pandas — Powerful data structures (Series and DataFrame) for data analysis and manipulation.
 
-Customizable plots (colors, labels, titles, legends).
+Regular Expressions — Pattern matching and string manipulation using regex.
 
-Supports interactive mode for real-time plotting.
+Repository Structure
 
-Basic Example:
-
-import matplotlib.pyplot as plt
-
-x = [1, 2, 3, 4]
-y = [10, 20, 25, 30]
-
-plt.plot(x, y, marker='o', color='blue', linestyle='--')
-plt.title("Sample Plot")
-plt.xlabel("X-axis")
-plt.ylabel("Y-axis")
-plt.show()
+Python_Essentials/
+│
+├── matplotlib.ipynb          # Examples and notes on Matplotlib  
+├── oops.ipynb                # Object-Oriented Programming concepts and code  
+├── pandas.ipynb              # Data manipulation with Pandas  
+├── regular_expression.ipynb  # Regex examples and explanations  
+├── data.csv                  # Sample dataset for practice
 
 
 
+Quick Overview of Each Topic
+# Matplotlib
+Create plots like line, bar, scatter, histogram, and pie charts.
 
-2. Object-Oriented Programming (OOPs)
-OOP is a programming paradigm that organizes code into classes and objects.
+Customize charts with titles, labels, and legends.
 
-Core Concepts:
+# OOPs
+Learn about classes and objects.
 
-Class → Blueprint for objects.
+Understand core principles: encapsulation, inheritance, polymorphism, abstraction.
 
-Object → Instance of a class.
+# Pandas
+Work with Series and DataFrame for efficient data handling.
 
-Encapsulation → Restricting access to data.
+Perform filtering, grouping, merging, and cleaning data.
 
-Inheritance → Reusing code from another class.
+# Regular Expressions
+Use regex to find, match, and replace patterns in text.
 
-Polymorphism → Same interface, different implementation.
+Practice common regex operations like search(), match(), and sub().
 
-Abstraction → Hiding internal details.
+# Requirements
+You need Python installed with the following packages:
 
-Basic Example:
-class Car:
-    def __init__(self, brand, model):
-        self.brand = brand
-        self.model = model
 
-    def start(self):
-        print(f"{self.brand} {self.model} is starting...")
-
-car1 = Car("Toyota", "Corolla")
-car1.start()
-
-3. Pandas
-Pandas is a Python library for data manipulation and analysis.
-
-Key Features:
-
-- DataFrame and Series structures.
-
-- Easy data cleaning, merging, filtering, grouping.
-
-- Handles CSV, Excel, SQL, and JSON.
-
-Basic Example:
-
-import pandas as pd
-
-data = {'Name': ['Alice', 'Bob', 'Charlie'],
-        'Age': [25, 30, 35]}
-
-df = pd.DataFrame(data)
-print(df.head())
-
-#Filtering
-print(df[df['Age'] > 28])
-
-4. Regular Expressions (Regex)
-Regular Expressions are patterns used to match and manipulate strings.
-
-Common Functions:
-
-re.match() → Checks if the pattern matches at the start.
-
-re.search() → Searches for the first occurrence.
-
-re.findall() → Returns all matches.
-
-re.sub() → Replaces matches.
-
-Basic Example:
-
-import re
-
-text = "My phone number is 9876543210"
-pattern = r"\d{10}"
-
-match = re.search(pattern, text)
-if match:
-    print("Found:", match.group())
+pip install pandas matplotlib notebook
